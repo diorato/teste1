@@ -1,0 +1,423 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body{
+    height: 100%;
+    background-color: rgb(7, 7, 7);
+}
+
+.clear{
+    clear: both;
+}
+
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+section.navegation{
+    width: 100%;
+    height: auto;
+    
+   
+}
+
+.logo-menu{
+ padding-top: 17px;
+ padding-left: 200px;
+ position: absolute;
+ color: white;
+}
+
+
+
+
+.menu-desktop ul{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background: rgba(3, 1, 1, 0.9)
+}
+
+.menu-desktop li{
+   list-style: none;
+   padding: 20px 30px;
+
+}
+
+.menu-desktop li:hover{
+    transition: 1s;
+    background-color: teal;
+}
+
+.menu-desktop a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+.menu-desktop input[type=text]{
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    margin: 0px 450px;
+    margin-top: 13px;
+    border-radius: 6px;
+    border: 4px solid teal;
+    border-style: solid;
+}
+
+.fa-search{
+    position: absolute;
+    margin-left: 550px;
+    margin-top: 14px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+section.main{
+    width: 100%;
+    height: auto;
+
+}
+
+.container .img-principal{
+    width: 100%;
+    min-height: 800px;
+    height: auto;
+    margin-top: 20px;
+    background-image: url(/source/img_ano_de_oracao.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+section.conteudo{
+    background-color: black;
+    width: 100%;
+    
+}
+
+
+
+.conteudo .principal{
+    background-color: coral;
+    width: 100%;
+    display: flex;
+    
+}
+
+.principal-1{
+    background-color: gray;
+    width: 90%;
+    padding: 0 30px;
+    margin: 0 auto;
+    
+}
+
+.principal .sobre1{
+    padding: 0 20px;
+    float: left;
+    background-color: blueviolet;
+}
+
+.principal .sobre2{
+    padding: 0 20px;
+   float: right;
+    background-color: red;
+}
+/*esse é o oficial*/
+nav{
+    background:black;
+    height: 80px;
+    width: 100%;
+    /*position: fixed; esse codigo coloca quando tiver uma img memor*/
+}
+
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav li a{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+a.active, a:hover{
+    background-color: teal;
+    transition: .5s; 
+}
+
+.checkbtn{
+    font-size: 30px;
+    float: right;
+    color: white;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+section.conteudo{
+    background: #e7e2e2;
+    margin-top: -6px;
+    margin-bottom: 20px;
+    
+}
+
+.container-contato{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-bottom: 30px;
+}
+
+.container-contato .endereco{
+float: left;
+width: 50%;
+}
+
+.endereco h2{
+    padding-left: 40px;
+    text-transform: uppercase;
+}
+
+.endereco .borda{
+    border-bottom: 2px solid teal;
+    width: 350px;
+    padding-top: 5px;
+}
+
+.endereco h3{
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.endereco .text-endereco{
+   padding-top: 10px;
+   padding-left: 50px;
+   
+}
+
+.text-endereco h2{
+    font-size: 25px;
+}
+.container-contato .formulario{
+    width: 50%;
+    float: right;
+}
+.formulario .texto-formulario{
+    padding-bottom: 10px;
+    margin-left: 4px;
+    margin-top: 70px;
+    font-size: 25px;
+}
+
+.formulario input[type="text"]{
+    font-size: 14px;
+    margin: 10px;
+    width: 250px;
+    padding: 10px 16px;
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.7);
+    border-radius:3px ;
+    
+}
+
+
+
+
+.formulario textarea{
+    margin-bottom: 20px;
+    margin-left: 4px;
+    font-size: 16px;
+    margin: 10px;
+    padding: 10px 16px;
+    width: 525px;
+    height: 100px;
+    resize: both;
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.7);
+    border-radius:3px ;
+}
+.formulario .bnt-enviar{
+    
+    margin: 20px 13px;
+    font-size: 76px;
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+footer.conteudo-footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.conteudo-footer .footer1 h4{
+  padding: 10px 0;
+  font-size: 20px;
+  border-bottom: 2px solid teal;
+}
+
+.conteudo-footer .text-endereco{
+    font-size: 15px;
+    padding: 3px;
+}
+
+.conteudo-footer .footer2 h4, .footer3 h4{
+    font-size: 20px;
+    border-bottom: 2px solid teal;
+  
+}
+
+.conteudo-footer a{
+    color: white;
+    border-radius: 3px;
+}
+
+.conteudo-footer .footer2 li, .footer3 li{
+    margin: 13px;
+   
+}
+
+.conteudo-footer2{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20px;
+    border-top: 2px solid teal;
+}  
+
+.conteudo-footer3{
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        
+    }
+
+    nav ul li{
+        display: block;
+        
+    }
+
+    nav li a{
+        font-size: 20px;
+    }
+
+    a.active, a:hover{
+        background: none;
+        color: teal;
+    }
+
+    #check:checked ~ul{
+        left: 0;
+        position: fixed;
+    }
+    .principal .sobre1, .sobre2{
+        width: 100%;
+    }
+}  
+/*teste*/
+nav{
+    height: 10vh;
+    background-color: black;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    width: 93%;
+    height: 100%;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-left: auto;
+    
+}
+
+.nav-links h2{
+    color: white;
+}
+
+.nav-links li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    
+}
+
+.nav-links a:hover{
+    border-bottom: 2px solid teal;
+   
+}
+
+/*procurar limpar o codigo*/
+
+@media screen and (max-width: 768px){
+
+   
+}
